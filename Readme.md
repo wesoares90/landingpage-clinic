@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-Clone from Github
+Clone from Github teste
 
 ```
 git clone https://github.com/themewagon/Nova-Bootstrap-5.git
