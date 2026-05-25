@@ -547,6 +547,13 @@ h6 {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.btn-claro{
+  background-color: #fff;
+  color: #215C5C;
+  border-color: #215C5C;
+  margin-top: 1rem;
+}
 .fbs__net-navbar .header-social a {
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
