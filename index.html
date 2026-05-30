@@ -1,804 +1,249 @@
-<!DOCTYPE html>
-
-<!--
-Template name: Nova
-Template author: FreeBootstrap.net
-Author website: https://freebootstrap.net/
-License: https://freebootstrap.net/license
--->
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Dra. Fernanda Garcia Passos | Clínica Médica</title>
-  <!-- ======= Google Font =======-->
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet" />
-  <!-- End Google Font-->
-  <!-- ======= Styles =======-->
-  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="assets/vendors/aos/aos.css" rel="stylesheet" />
-  <!-- End Styles-->
-  <!-- ======= Theme Style =======-->
-  <link href="assets/css/style.css?v=1.0" rel="stylesheet" />
-  <!-- End Theme Style-->
-  <!-- ======= Apply theme =======-->
-  <script>
-    // Apply the theme as early as possible to avoid flicker
-    (function () {
-      const storedTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-bs-theme', storedTheme);
-    })();
-  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dra. Fernanda Garcia Passos | Consulta médica online</title>
+  <meta name="description"
+    content="Consulta médica online com foco em saúde metabólica, emagrecimento com acompanhamento, proteção renal, diabetes, colesterol e telemedicina Brasil-Itália.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css?v=2.0" rel="stylesheet">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dra. Fernanda Garcia Passos" />
+  <meta property="og:description"
+    content="Consulta médica com foco em medicina metabólica, proteção renal e telemedicina internacional." />
+  <meta property="og:image" content="https://garciapassosmed.com/assets/images/hero-img-1-min.jpg" />
+  <meta property="og:url" content="https://garciapassosmed.com/" />
 </head>
 
 <body>
-  <!-- ======= Site Wrap =======-->
-  <div class="site-wrap">
-    <!-- ======= Header =======-->
-    <header aria-label="freebootstrap.net navbar" class="fbs__net-navbar navbar navbar-expand-lg dark">
-      <div class="container d-flex align-items-center justify-content-between py-2">
-        <!-- Start Logo-->
-        <a class="navbar-brand w-auto" href="index.html">
-          <!-- If you use a text logo, uncomment this if it is commented-->
-          <!-- Vertex-->
-          <!-- If you plan to use an image logo, uncomment this if it is commented-->
-          <!-- logo dark--><img alt="FreeBootstrap.net image placeholder" class="logo-header"
-            src="assets/images/logo_dr.svg" />
-          <!-- logo light--><img alt="FreeBootstrap.net image placeholder" class="logo light img-fluid"
-            src="assets/images/logo_dr.png" />
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#home" aria-label="Dra. Fernanda Garcia Passos">
+          <img src="assets/images/logo_dr.svg" alt="Dra. Fernanda Garcia Passos">
         </a>
-        <!-- End Logo-->
-        <!-- Start offcanvas-->
-        <div aria-labelledby="fbs__net-navbarsLabel" class="offcanvas offcanvas-start w-75" id="fbs__net-navbars"
-          tabindex="-1">
-          <div class="offcanvas-header">
-            <div class="offcanvas-header-logo">
-              <!-- If you use a text logo, uncomment this if it is commented-->
-              <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
-              <!-- If you plan to use an image logo, uncomment this if it is commented-->
-              <a class="logo-link" href="index.html" id="fbs__net-navbarsLabel">
-                <!-- logo dark--><img alt="FreeBootstrap.net image placeholder" class="logo dark img-fluid"
-                  src="assets/images/logo_dr.png" />
-                <!-- logo light--><img alt="FreeBootstrap.net image placeholder" class="logo light img-fluid"
-                  src="assets/images/logo_dr.png" /></a>
-            </div>
-            <button aria-label="Close" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
-              type="button"></button>
-          </div>
-          <div class="offcanvas-body align-items-lg-center">
-            <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
-              <li class="nav-item"><a aria-current="page" class="nav-link scroll-link active" href="#home">Home</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#about">Sobre mim</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#tratamentos">Tratamentos</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#servicos">Serviços</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#avaliacoes">Avaliações</a></li>
-            </ul>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#como-funciona">Como funciona</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="btn btn-primary ms-lg-2"
+                href="https://app.garciapassosmed.com/login?tab=novo-paciente">Agendar consulta</a></li>
+          </ul>
         </div>
-        <!-- End offcanvas-->
-        <div class="ms-auto w-auto">
-          <div class="header-social d-flex align-items-center gap-1"><a class="btn btn-primary py-2"
-              href="https://app.garciapassosmed.com/login?tab=novo-paciente">Agende sua
-              consulta</a>
-            <button aria-controls="fbs__net-navbars" aria-expanded="false" aria-label="Toggle navigation"
-              class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
-              data-bs-target="#fbs__net-navbars" data-bs-toggle="offcanvas">
-              <svg class="fbs__net-icon-menu" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
-                xmlns="http://www.w3.org/2000/svg">
-                <line x1="21" x2="3" y1="6" y2="6"></line>
-                <line x1="15" x2="3" y1="12" y2="12"></line>
-                <line x1="17" x2="3" y1="18" y2="18"></line>
-              </svg>
-              <svg class="fbs__net-icon-close" fill="none" height="24" stroke="currentColor" stroke-linecap="round"
-                stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 6 6 18"></path>
-                <path d="m6 6 12 12"></path>
-              </svg>
-            </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <span class="eyebrow">Consulta médica online • Brasil e Itália</span>
+            <h1>Cuidado médico objetivo para organizar sua saúde e definir o próximo passo.</h1>
+            <p class="lead"> Atendimento individualizado com foco em saúde metabólica, emagrecimento com acompanhamento médico, diabetes, colesterol, proteção renal, revisão de exames e elaboração de laudos médicos para INSS.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="https://app.garciapassosmed.com/login?tab=novo-paciente">Marcar
+                minha consulta</a>
+              <a class="btn btn-outline btn-lg" href="https://app.garciapassosmed.com/login">Já sou paciente</a>
+            </div>
+            <div class="trust-row">
+              <div><strong>Online</strong><span>consulta por vídeo</span></div>
+              <div><strong>Bilingue</strong><span>PT / EN / IT</span></div>
+              <div><strong>Foco</strong><span>plano prático</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-photo-wrap">
+              <img src="assets/images/hero-img-1-min.jpg" alt="Dra. Fernanda Garcia Passos" class="hero-photo">
+              <div class="floating-card">
+                <i class="bi bi-calendar2-check"></i>
+                <span>Agendamento simples e atendimento direto</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <!-- End Header-->
-    <!-- ======= Main ======-->
-    <main>
-      <!-- ======= Hero =======-->
-      <section class="hero__v6 section" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <div class="row">
-                <div class="col-lg-11">
-                  <h1 class="hero-title mb-3" data-aos="fade-up" data-aos-delay="100">Cuidado médico claro, rápido e sem
-                    complicação.</h1>
-                  <!-- <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">Atendimento
-                    personalizado com foco no que realmente importa: sua saúde, seu tempo e decisões seguras. Agende sua
-                    consulta de forma simples e fale direto comigo pelo WhatsApp.</p> -->
-                  <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a
-                      class="btn btn-agende" href="https://app.garciapassosmed.com/login?tab=novo-paciente">Agende
-                      agora</a></div>
-                  <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300"><a
-                      class="btn btn-agende btn-claro" href="https://app.garciapassosmed.com/login">Já sou paciente
-                      agora</a></div>
-                  <!-- <div class="logos mb-4" data-aos="fade-up" data-aos-delay="400"><span class="logos-title text-uppercase mb-4 d-block">Trusted by major companies worldwide</span>
-                      <div class="logos-images d-flex gap-4 align-items-center"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-air-bnb__black.svg" alt="Company 1" style="width: 110px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-ibm__black.svg" alt="Company 2" style="width: 80px;"><img class="img-fluid js-img-to-inline-svg" src="assets/images/logo/actual-size/logo-google__black.svg" alt="Company 3" style="width: 110px;"></div>
-                    </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="hero-img"><img alt="Image card" class="img-card img-fluid" data-aos="fade-down"
-                  data-aos-delay="600" src="assets/images/card-expenses.png" /><img alt="Hero Image"
-                  class="img-main img-fluid rounded-4" data-aos="fade-in" data-aos-delay="500"
-                  src="assets/images/hero-img-1-min.jpg" /></div>
-            </div>
+    </section>
+
+    <section class="section quick-conversion">
+      <div class="container">
+        <div class="conversion-card">
+          <div>
+            <span class="eyebrow light">Para quem é</span>
+            <h2>Você sai da consulta com exames revisados, prioridades definidas e um plano claro.</h2>
+          </div>
+          <a class="btn btn-light" href="https://app.garciapassosmed.com/login?tab=novo-paciente">Quero agendar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Serviços</span>
+          <h2>Escolha o atendimento ideal para sua necessidade</h2>
+        </div>
+        <div class="row g-3 g-lg-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card featured">
+              <i class="bi bi-activity"></i>
+              <h3>Medicina metabólica e emagrecimento</h3>
+              <p>Avaliação de peso, resistência à insulina, compulsão, rotina, exames e indicação de tratamento quando
+                fizer sentido.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-droplet-half"></i>
+              <h3>Diabetes, colesterol e hipertensão</h3>
+              <p>Organização de risco cardiometabólico, metas de exames e ajuste de condutas com acompanhamento.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-heart-pulse"></i>
+              <h3>Proteção renal</h3>
+              <p>Cuidado para quem tem fatores de risco, rim único, alteração de creatinina, proteinúria ou histórico
+                familiar.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-file-earmark-medical"></i>
+              <h3>Revisão de exames e check-up</h3>
+              <p>Interpretação objetiva dos exames e definição do que precisa tratar, repetir ou acompanhar.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-globe2"></i>
+              <h3>Telemedicina internacional</h3>
+              <p>Atendimento para brasileiros no exterior e pacientes que precisam de orientação médica em português,
+                inglês ou italiano.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-hospital"></i>
+              <h3>Saúde renal e hemodiálise</h3>
+              <p>Orientação médica para pacientes renais, familiares e acompanhamento de dúvidas relacionadas à terapia
+                renal substitutiva.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="service-card">
+              <i class="bi bi-file-earmark-medical"></i>
+
+              <h3>Laudo Médico para INSS</h3>
+
+              <p>
+                Elaboração de laudos médicos, relatórios clínicos e documentação
+                para perícias do INSS, auxílio-doença, aposentadoria por incapacidade
+                e acompanhamento médico-pericial.
+              </p>
+            </article>
           </div>
         </div>
-        <!-- End Hero-->
-      </section>
-      <!-- End Hero-->
-      <!-- ======= About =======-->
-      <section class="about__v4 section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 order-md-2">
-              <div class="row justify-content-end">
-                <div class="col-md-11 mb-4 mb-md-0"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                    data-aos-delay="0">Sobre mim</span>
-                  <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">Promover saúde vai além de tratar sintomas —
-                    é entender o paciente por completo</h2>
-                  <div data-aos="fade-up" data-aos-delay="200">
-                    <p>Meu foco é oferecer um atendimento médico claro, individualizado e baseado em acompanhamento
-                      real.
-                      Atuo em clínica médica com atenção especial à saúde metabólica, proteção renal e qualidade de
-                      vida,
-                      sempre buscando entender o paciente de forma completa e não apenas tratar sintomas isolados.</p>
-                    <p>Acompanho pacientes em processos de emagrecimento com suporte médico, diabetes, resistência à
-                      insulina, alterações de colesterol, hipertensão,
-                      saúde renal e orientação para pacientes em hemodiálise.
-                      Meu objetivo é ajudar você a cuidar da saúde com segurança, clareza e condutas que façam sentido
-                      para sua rotina.</p>
-                  </div>
-                  <h4 class="small fw-bold mt-4 mb-3" data-aos="fade-up" data-aos-delay="300">Pilares do atendimento
-                  </h4>
-                  <ul class="d-flex flex-row flex-wrap list-unstyled gap-3 features" data-aos="fade-up"
-                    data-aos-delay="400">
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Clareza nas condutas</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Acompanhamento individual</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Medicina metabólica</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Proteção renal</span></li>
-                    <li class="d-flex align-items-center gap-2"><span class="icon rounded-circle text-center"><i
-                          class="bi bi-check"></i></span><span class="text">Brasil e Itália</span></li>
-                  </ul>
-                  <div class="mission-statement p-4 rounded-4 d-flex gap-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mission-icon text-center rounded-circle"><i class="bi bi-heart-pulse fs-4"></i></div>
-                    <div>
-                      <h3 class="text-uppercase fw-bold">Missão</h3>
-                      <p class="fs-5 mb-0">Oferecer um cuidado médico acessível, responsável e estratégico, ajudando
-                        cada
-                        paciente a entender sua saúde e tomar decisões com segurança.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="img-wrap position-relative"><img alt="Dra. Fernanda Garcia Passos" class="img-fluid rounded-4"
-                  data-aos="fade-up" data-aos-delay="0" src="assets/images/about_2-min.jpg" />
-              </div>
-            </div>
+      </div>
+    </section>
+
+    <section class="section pathway" id="como-funciona">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-5">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Um processo simples para você chegar à consulta sem confusão.</h2>
           </div>
-        </div>
-      </section>
-      <!-- End About-->
-      <!-- ======= Features =======-->
-      <section class="section features__v2" id="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-lg-flex p-5 rounded-4 content" data-aos="fade-in" data-aos-delay="0">
-                <div class="row">
-                  <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                    <div class="row">
-                      <div class="col-lg-11">
-                        <div class="h-100 flex-column justify-content-between d-flex">
-                          <div>
-                            <h2 class="mb-4">Por que escolher esse atendimento?</h2>
-                            <p class="mb-5">A proposta é cuidar de forma prática, humana e baseada em acompanhamento
-                              real: entender o contexto do paciente, organizar exames, definir metas possíveis e ajustar
-                              o plano conforme a evolução.</p>
-                          </div>
-                          <!-- <div class="align-self-start">
-                            <a class="btn d-inline-flex align-items-center gap-2"href="#">Agendar avaliação</a>
-                          </div> -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-7">
-                    <div class="row justify-content-end">
-                      <div class="col-lg-11">
-                        <div class="row">
-                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="0">
-                            <div class="icon text-center mb-4"><i class="bi bi-person-check fs-4"></i></div>
-                            <h3 class="fs-6 fw-bold mb-3">Consulta individualizada</h3>
-                            <p>Plano pensado para sua rotina, seus exames, sintomas, histórico e objetivos.</p>
-                          </div>
-                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                            <div class="icon text-center mb-4"><i class="bi bi-clipboard2-pulse fs-4"></i></div>
-                            <h3 class="fs-6 fw-bold mb-3">Acompanhamento metabólico</h3>
-                            <p>Controle de peso, glicemia, resistência à insulina, colesterol e risco cardiometabólico.
-                            </p>
-                          </div>
-                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                            <div class="icon text-center mb-4"><i class="bi bi-droplet-half fs-4"></i></div>
-                            <h3 class="fs-6 fw-bold mb-3">Proteção renal</h3>
-                            <p>Olhar atento para função renal, doenças crônicas e pacientes em hemodiálise.</p>
-                          </div>
-                          <div class="col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="icon text-center mb-4"><i class="bi bi-camera-video fs-4"></i></div>
-                            <h3 class="fs-6 fw-bold mb-3">Telemedicina</h3>
-                            <p>Atendimento online com praticidade, orientação clara e continuidade do cuidado.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Features-->
-      <!-- ======= Pricing =======-->
-      <section class="section pricing__v2" id="tratamentos">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                data-aos-delay="0">Tratamentos</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Cuidado para metabolismo, rim e qualidade de vida
-              </h2>
-              <p data-aos="fade-up" data-aos-delay="200">Tratamentos conduzidos com avaliação médica, exames, metas
-                realistas e acompanhamento conforme a necessidade de cada paciente.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-              <div class="p-5 rounded-4 price-table h-100">
-                <h3>Emagrecimento assistido</h3>
-                <p>Avaliação clínica, investigação de fatores metabólicos, orientação de rotina e, quando indicado,
-                  acompanhamento de tratamento medicamentoso com segurança.</p>
-                <div><a class="btn" href="https://app.garciapassosmed.com/login">Quero avaliar meu caso</a></div>
-              </div>
-            </div>
-            <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
-              <div class="p-5 rounded-4 price-table popular h-100">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h3 class="mb-3">Saúde metabólica e renal</h3>
-                    <p>Acompanhamento para diabetes, resistência à insulina, colesterol, hipertensão, esteatose
-                      hepática, risco cardiovascular e proteção da função renal.</p>
-                  </div>
-                  <div class="col-md-6 pricing-features">
-                    <h4 class="text-uppercase fw-bold mb-3">Inclui avaliação de</h4>
-                    <ul class="list-unstyled d-flex flex-column gap-3">
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Exames laboratoriais e histórico clínico</span></li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Peso, metabolismo, glicemia e colesterol</span></li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Função renal e fatores de risco</span></li>
-                      <li class="d-flex gap-2 align-items-start mb-0"><span
-                          class="icon rounded-circle position-relative mt-1"><i
-                            class="bi bi-check"></i></span><span>Plano individualizado e acompanhamento</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Pricing-->
-      <!-- ======= How it works =======-->
-      <section class="section howitworks__v1" id="servicos">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 text-center mx-auto"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                data-aos-delay="0">Serviços</span>
-              <h2 data-aos="fade-up" data-aos-delay="100">Como funciona o atendimento</h2>
-              <p data-aos="fade-up" data-aos-delay="200">Da primeira avaliação ao acompanhamento, o objetivo é tornar o
-                cuidado simples, organizado e seguro.</p>
-            </div>
-          </div>
-          <div class="row g-md-5">
-            <div class="col-md-6 col-lg-3">
-              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
-                data-aos="fade-up" data-aos-delay="0">
-                <div data-aos="fade-right" data-aos-delay="500"><img alt="" class="arch-line"
-                    src="assets/images/arch-line.svg" /></div><span
-                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">1</span>
+          <div class="col-lg-7">
+            <div class="steps">
+              <div class="step"><span>1</span>
                 <div>
-                  <h3 class="fs-5 mb-4">Agendamento</h3>
-                  <p>O paciente escolhe o melhor horário e recebe as orientações iniciais para a consulta.</p>
+                  <h3>Agende pelo site</h3>
+                  <p>Escolha o melhor horário e envie seus dados básicos.</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
-              <div
-                class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative">
-                <div data-aos="fade-right" data-aos-delay="1100"><img alt="" class="arch-line reverse"
-                    src="assets/images/arch-line-reverse.svg" /></div><span
-                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">2</span>
-                <h3 class="fs-5 mb-4">Avaliação médica</h3>
-                <p>Escuta clínica, análise de sintomas, rotina, histórico, medicamentos e exames disponíveis.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1200">
-              <div class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative">
-                <div data-aos="fade-right" data-aos-delay="1700"><img alt="" class="arch-line"
-                    src="assets/images/arch-line.svg" /></div><span
-                  class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">3</span>
-                <h3 class="fs-5 mb-4">Plano de cuidado</h3>
-                <p>Conduta clara, solicitação de exames quando necessário, metas e orientações práticas.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="1800">
-              <div class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative">
-                <span class="step-number rounded-circle text-center fw-bold mb-5 mx-auto">4</span>
+              <div class="step"><span>2</span>
                 <div>
-                  <h3 class="fs-5 mb-4">Acompanhamento</h3>
-                  <p>Retornos e ajustes conforme evolução, resposta ao tratamento e resultados dos exames.</p>
+                  <h3>Envie exames e queixas</h3>
+                  <p>Antes da consulta, reúna exames recentes, medicações e principais objetivos.</p>
+                </div>
+              </div>
+              <div class="step"><span>3</span>
+                <div>
+                  <h3>Receba um plano claro</h3>
+                  <p>Você entende prioridades, condutas e quando acompanhar a evolução.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End How it works-->
-      <!-- ======= Stats =======-->
-      <section class="stats__v3 section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex flex-wrap content rounded-4" data-aos="fade-up" data-aos-delay="0">
-                <div class="rounded-borders">
-                  <div class="rounded-border-1"></div>
-                  <div class="rounded-border-2"></div>
-                  <div class="rounded-border-3"></div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="100">
-                  <div class="stat-item">
-                    <h3 class="fs-1 fw-bold"><span>Clareza</span></h3>
-                    <p class="mb-0">Explicações simples para decisões seguras</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="200">
-                  <div class="stat-item">
-                    <h3 class="fs-1 fw-bold"><span>Estratégia</span></h3>
-                    <p class="mb-0">Plano baseado em exames, rotina e objetivos</p>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center" data-aos="fade-up" data-aos-delay="300">
-                  <div class="stat-item">
-                    <h3 class="fs-1 fw-bold"><span>Cuidado</span></h3>
-                    <p class="mb-0">Acompanhamento próximo e individualizado</p>
-                  </div>
-                </div>
-              </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-5">
+            <img src="assets/images/about_2-min.jpg" alt="Dra. Fernanda Garcia Passos em atendimento"
+              class="about-photo">
+          </div>
+          <div class="col-lg-7">
+            <span class="eyebrow">Dra. Fernanda Garcia Passos</span>
+            <h2>Clínica médica com visão integral, humana e estratégica.</h2>
+            <p>Atuação em clínica médica, saúde metabólica e saúde renal, com experiência em acompanhamento de pacientes
+              crônicos e hemodiálise. A consulta é pensada para transformar informações soltas em decisões práticas.</p>
+            <div class="credentials">
+              <span><i class="bi bi-check2-circle"></i> CRM ativo no Brasil</span>
+              <span><i class="bi bi-check2-circle"></i> Autorização para atendimento na Itália</span>
+              <span><i class="bi bi-check2-circle"></i> Atendimento em português, inglês e italiano</span>
             </div>
+            <a class="btn btn-primary mt-3" href="https://app.garciapassosmed.com/login?tab=novo-paciente">Agendar com a
+              Dra. Fernanda</a>
           </div>
         </div>
-      </section>
-      <!-- End Stats-->
-      <!-- ======= Services =======-->
-      <section class="section services__v3" id="services">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-8 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                data-aos-delay="0">Áreas de cuidado</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Atendimento médico para diferentes necessidades
-                de saúde</h2>
-            </div>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-activity fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Clínica médica</h3>
-                  <p class="mb-4">Avaliação de sintomas, check-up, revisão de exames, orientação diagnóstica e cuidado
-                    contínuo.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-clipboard2-pulse fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Medicina metabólica</h3>
-                  <p class="mb-4">Acompanhamento de obesidade, resistência à insulina, diabetes, colesterol e risco
-                    cardiometabólico.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-droplet-half fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Proteção renal</h3>
-                  <p class="mb-4">Avaliação da função renal, fatores de risco e orientação para pacientes com doença
-                    renal crônica.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-hospital fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Hemodiálise</h3>
-                  <p class="mb-4">Acompanhamento clínico de pacientes em terapia renal substitutiva e organização do
-                    cuidado.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-camera-video fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Telemedicina</h3>
-                  <p class="mb-4">Consulta online para pacientes no Brasil e no exterior, com orientação clara e
-                    seguimento individual.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between gap-5">
-                <div><span class="icon mb-4"><i class="bi bi-file-earmark-medical fs-1"></i></span>
-                  <h3 class="fs-5 mb-3">Relatórios e laudos</h3>
-                  <p class="mb-4">Documentos médicos, encaminhamentos e relatórios clínicos quando indicados durante o
-                    acompanhamento.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container">
+        <div class="final-box">
+          <h2>Pronta para cuidar da sua saúde com mais clareza?</h2>
+          <p>Agende sua consulta e receba uma avaliação médica objetiva, individualizada e alinhada à sua rotina.</p>
+          <a class="btn btn-primary btn-lg" href="https://app.garciapassosmed.com/login?tab=novo-paciente">Marcar
+            consulta agora</a>
         </div>
-      </section>
-      <!-- Services-->
-      <!-- ======= Testimonials =======-->
-      <section class="section testimonials__v2" id="avaliacoes">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-lg-5 mx-auto text-center"><span class="subtitle text-uppercase mb-3" data-aos="fade-up"
-                data-aos-delay="0">Avaliações</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">O que os pacientes valorizam no atendimento</h2>
-              <p data-aos="fade-up" data-aos-delay="200">Depoimentos ilustrativos para destacar os principais
-                diferenciais da consulta.</p>
-            </div>
-          </div>
-          <div class="row g-4" data-masonry='{"percentPosition": true }'>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“Gostei muito da consulta porque consegui entender meus exames e sair com um
-                  plano claro do que fazer.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente em acompanhamento
-                      metabólico</strong><span>Consulta online</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“Atendimento humano, objetivo e sem pressa. A Dra. Fernanda explicou cada etapa
-                  do tratamento.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente de clínica médica</strong><span>Acompanhamento
-                      individual</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“Eu precisava organizar minha saúde, meu peso e meus exames. O acompanhamento
-                  me ajudou a ter direção.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente em tratamento de peso</strong><span>Saúde
-                      metabólica</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“A consulta online foi prática e resolveu o que eu precisava, mesmo estando
-                  fora do Brasil.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente internacional</strong><span>Telemedicina</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“O diferencial foi o cuidado com a função renal e a atenção aos detalhes dos
-                  meus exames.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente com risco renal</strong><span>Proteção
-                      renal</span></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-              <div class="testimonial rounded-4 p-4">
-                <blockquote class="mb-3">“Recebi orientações claras, sem complicação, e consegui seguir o plano com mais
-                  segurança.”</blockquote>
-                <div class="testimonial-author d-flex gap-3 align-items-center">
-                  <div class="lh-base"><strong class="d-block">Paciente em seguimento</strong><span>Cuidado
-                      contínuo</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonials-->
-      <!-- ======= FAQ =======-->
-      <!-- <section class="section faq__v2" id="faq">
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
-                data-aos="fade-up" data-aos-delay="0">FAQ</span>
-              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your
-                vision to life. Once complete, effortlessly share your creations.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-content">
-                <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button aria-controls="panelsStayOpen-collapseOne" aria-expanded="true" class="accordion-button"
-                        data-bs-target="#panelsStayOpen-collapseOne" data-bs-toggle="collapse" type="button"> What
-                        services does your web agency offer? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
-                      <div class="accordion-body">Our web agency offers a comprehensive range of services including web
-                        design and development, e-commerce solutions, SEO optimization, content creation, website
-                        maintenance, and digital marketing strategies. We tailor our services to meet the unique needs
-                        of each client, ensuring a customized approach to every project.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button aria-controls="panelsStayOpen-collapseTwo" aria-expanded="false"
-                        class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseTwo"
-                        data-bs-toggle="collapse" type="button"> How much does it cost to build a website? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
-                      <div class="accordion-body">The cost of building a website can vary widely depending on the
-                        complexity, features, and specific requirements of your project. We offer several pricing
-                        packages to accommodate different budgets and needs. After an initial consultation, we can
-                        provide a detailed quote based on your specific goals and objectives.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button aria-controls="panelsStayOpen-collapseThree" aria-expanded="false"
-                        class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseThree"
-                        data-bs-toggle="collapse" type="button"> How long does it take to design and develop a website?
-                      </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
-                      <div class="accordion-body">The timeline for designing and developing a website depends on the
-                        project's complexity and scope. Typically, a standard business website takes about 4-6 weeks to
-                        complete, while more complex projects like e-commerce sites or custom applications may take
-                        longer. We work closely with our clients to establish a realistic timeline and keep you informed
-                        throughout the process.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button aria-controls="panelsStayOpen-collapseFour" aria-expanded="false"
-                        class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseFour"
-                        data-bs-toggle="collapse" type="button"> Will my website be mobile-friendly? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
-                      <div class="accordion-body">Absolutely! All the websites we design and develop are fully
-                        responsive, meaning they are optimized to work seamlessly across all devices, including
-                        desktops, tablets, and smartphones. Ensuring a great user experience on mobile devices is a top
-                        priority in our development process.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button aria-controls="panelsStayOpen-collapseFive" aria-expanded="false"
-                        class="accordion-button collapsed" data-bs-target="#panelsStayOpen-collapseFive"
-                        data-bs-toggle="collapse" type="button"> Do you provide ongoing support and maintenance for
-                        websites? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
-                      <div class="accordion-body">Yes, we offer ongoing support and maintenance services to ensure your
-                        website remains up-to-date, secure, and functioning smoothly. Our maintenance packages can
-                        include regular updates, security monitoring, backups, and technical support to address any
-                        issues that may arise. We're here to help you keep your website running efficiently long after
-                        it's launched.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End FAQ-->
-      </section>
-      <!-- End FAQ-->
-      <!-- ======= Contact =======-->
-      <!-- <section class="section contact__v2" id="contact">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 col-lg-7 mx-auto text-center"><span class="subtitle text-uppercase mb-3"
-                data-aos="fade-up" data-aos-delay="0">Contact</span>
-              <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Contact Us</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your
-                vision to life. Once complete, effortlessly share your creations.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex gap-5 flex-column">
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
-                  <div class="icon d-block"><i class="bi bi-telephone"></i></div><span> <span
-                      class="d-block">Phone</span><strong>+(01 234 567 890)</strong></span>
-                </div>
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon d-block"><i class="bi bi-send"></i></div><span> <span
-                      class="d-block">Email</span><strong>info@mydomain.com</strong></span>
-                </div>
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon d-block"><i class="bi bi-geo-alt"></i></div><span> <span
-                      class="d-block">Address</span>
-                    <address class="fw-bold">123 Main Street Apt 4B Springfield, <br /> IL 62701 United States</address>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-wrapper" data-aos="fade-up" data-aos-delay="300">
-                <form id="contactForm">
-                  <div class="row gap-3 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="name">Name</label>
-                      <input class="form-control" id="name" name="name" required="" type="text" />
-                    </div>
-                    <div class="col-md-12">
-                      <label class="mb-2" for="email">Email</label>
-                      <input class="form-control" id="email" name="email" required="" type="email" />
-                    </div>
-                  </div>
-                  <div class="row gap-3 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="subject">Subject</label>
-                      <input class="form-control" id="subject" name="subject" type="text" />
-                    </div>
-                  </div>
-                  <div class="row gap-3 gap-md-0 mb-3">
-                    <div class="col-md-12">
-                      <label class="mb-2" for="message">Message</label>
-                      <textarea class="form-control" id="message" name="message" required="" rows="5"></textarea>
-                    </div>
-                  </div>
-                  <button class="btn btn-primary fw-semibold" type="submit">Send Message</button>
-                </form>
-                <div class="mt-3 d-none alert alert-success" id="successMessage">Message sent successfully!</div>
-                <div class="mt-3 d-none alert alert-danger" id="errorMessage">Message sending failed. Please try again
-                  later.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Contact-->
-      <!-- ======= Footer =======-->
-      <footer class="footer pt-5 pb-5">
-        <div class="container">
-          <div class="row mb-5 pb-4">
-            <!-- <div class="col-md-7">
-              <h2 class="fs-5">Join our newsletter</h2>
-              <p>Stay updated with our latest templates and offers—join our newsletter today!</p>
-            </div>
-            <div class="col-md-5">
-              <form class="d-flex gap-2">
-                <input class="form-control" placeholder="Email your email" required="" type="email" />
-                <button class="btn btn-primary fs-6" type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div> -->
-            <!-- <div class="row justify-content-between mb-5 g-xl-5">
-            <div class="col-md-4 mb-5 mb-lg-0">
-              <h3 class="mb-3">About</h3>
-              <p class="mb-4">Utilize our tools to develop your concepts and bring your vision to life. Once complete,
-                effortlessly share your creations.</p>
-            </div>
-            <div class="col-md-7">
-              <div class="row g-2">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                  <h3 class="mb-3">Company</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="page-about.html">Leadership</a></li>
-                    <li><a href="page-careers.html">Careers <span class="badge ms-1">we're hiring</span></a></li>
-                    <li><a href="page-case-studies.html">Case Studies</a></li>
-                    <li><a href="page-terms-conditions.html">Terms &amp; Conditions</a></li>
-                    <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="page-404.html">404 page</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                  <h3 class="mb-3">Accounts</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="page-signup.html">Register</a></li>
-                    <li><a href="page-signin.html">Sign in</a></li>
-                    <li><a href="page-forgot-password.html">Fogot Password</a></li>
-                    <li><a href="page-coming-soon.html">Coming soon</a></li>
-                    <li><a href="page-portfolio-masonry.html">Portfolio Masonry</a></li>
-                  </ul>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
-                  <h3 class="mb-3">Contact</h3>
-                  <p class="d-flex mb-3"><i class="bi bi-geo-alt-fill me-3"></i><span>123 Main Street Apt 4B
-                      Springfield, <br /> IL 62701 United States</span></p><a class="d-flex mb-3"
-                    href="mailto:info@mydomain.com"><i
-                      class="bi bi-envelope-fill me-3"></i><span>info@mydomain.com</span></a><a class="d-flex mb-3"
-                    href="tel://+123456789900"><i class="bi bi-telephone-fill me-3"></i><span>+1 (234) 5678
-                      9900</span></a><a class="d-flex mb-3" href="https://freebootstrap.net"><i
-                      class="bi bi-globe me-3"></i><span>FreeBootstrap.net</span></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-            <div class="row credits pt-3">
-              <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
-                <!--
-                Note:
-                =>>> Please keep all the footer links intact. <<<=
-                =>>> You can only remove the links if you buy the pro version. <<<=
-                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<=
-                -->
-                ©
-                <script>document.write(new Date().getFullYear());</script> GarciaPassos Clínica Médica.
-                Todos os direitos reservados <i class="bi bi-heart-fill text-danger"></i> por <a
-                  href="#">SoaresDeveloper`s</a>
-              </div>
-            </div>
-      </footer>
-      <!-- End Footer-->
-    </main>
-  </div>
-  <!-- ======= Back to Top =======-->
-  <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
-  <!-- End Back to top-->
-  <!-- ======= Javascripts =======-->
+      </div>
+    </section>
+  </main>
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a 
+    href="https://wa.me/5511920958120?text=Olá%20Dra.%20Fernanda,%20gostaria%20de%20agendar%20uma%20consulta."
+    class="whatsapp-float"
+    target="_blank"
+  >
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>©Dra. Fernanda Garcia Passos</span>
+      <span>Desenvolvido por: WSG Digital</span>
+    </div>
+  </footer>
   <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendors/gsap/gsap.min.js"></script>
-  <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
-  <script src="assets/vendors/glightbox/glightbox.min.js"></script>
-  <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendors/aos/aos.js"></script>
-  <script src="assets/vendors/purecounter/purecounter.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <!-- End JavaScripts-->
 </body>
 
 </html>
